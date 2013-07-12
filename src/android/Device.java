@@ -196,5 +196,19 @@ public class Device extends CordovaPlugin {
         TimeZone tz = TimeZone.getDefault();
         return (tz.getID());
     }
+    
+    public int getWidth() {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        return size.x;
+    }
+    
+    public int getHeight() {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        return size.y;
+    }
 
 }
