@@ -35,6 +35,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
+import android.view.Display;
+import android.view.View;
 
 public class Device extends CordovaPlugin {
     public static final String TAG = "Device";
